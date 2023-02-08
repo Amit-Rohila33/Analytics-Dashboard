@@ -1309,29 +1309,62 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fullcalendar/core@^6.1.1", "@fullcalendar/core@~6.1.1":
-  version "6.1.1"
-  resolved "https://registry.npmjs.org/@fullcalendar/core/-/core-6.1.1.tgz"
-  integrity sha512-im5Dbgi/d7Q8DEUFuLaInL/TG+CrRH+zePq58LrKyFFoJKkx2CP+OS29ijVBnUiGyzCWtZ9lMIzLmWDzIMnJ0A==
+"@fullcalendar/common@~5.11.2", "@fullcalendar/common@~5.11.3":
+  version "5.11.4"
+  resolved "https://registry.npmjs.org/@fullcalendar/common/-/common-5.11.4.tgz"
+  integrity sha512-wjy+EZgZIPWq1Z5qeB/pV2dmsXwzTJ2teNh5bjlVeHsvDYwERXSZEG2CdoF/NCTJaYeQY93xu1cj9Jw/0KXywA==
   dependencies:
+    tslib "^2.1.0"
+
+"@fullcalendar/core@^5.11.3":
+  version "5.11.3"
+  resolved "https://registry.npmjs.org/@fullcalendar/core/-/core-5.11.3.tgz"
+  integrity sha512-YUFxCvVJytUwFeXCx4J17kFMM7Ixwn9zBjVRw5NM2bMwgR6VAhSnlZc6yNQSOIy7Hj2TF0vDkO/4JNlTvxyAXw==
+  dependencies:
+    "@fullcalendar/common" "~5.11.3"
     preact "^10.0.5"
+    tslib "^2.1.0"
 
-"@fullcalendar/daygrid@^6.1.1", "@fullcalendar/daygrid@~6.1.1":
-  version "6.1.1"
-  resolved "https://registry.npmjs.org/@fullcalendar/daygrid/-/daygrid-6.1.1.tgz"
-  integrity sha512-/yIrN3IZSdob/UvAaPqWzBqyaQf3+DdcGG7xocVpmt2MudFbTpstF+ffPdBAQWqoWoB18Q92s6fn9teva5nDwA==
-
-"@fullcalendar/list@^6.1.1":
-  version "6.1.1"
-  resolved "https://registry.npmjs.org/@fullcalendar/list/-/list-6.1.1.tgz"
-  integrity sha512-JHhjIREGDYdmoPdniP6fNDypuAXwVZkouWUSD8/8CMmgHAICPuME95ttVZNTmvsE6Jbv1NY4VGoUkTpBGlfG+g==
-
-"@fullcalendar/timegrid@^6.1.1":
-  version "6.1.1"
-  resolved "https://registry.npmjs.org/@fullcalendar/timegrid/-/timegrid-6.1.1.tgz"
-  integrity sha512-JWjSxjxCBxIhkLsKT1uQmRWUHqfQWjtXJIy25Ur0jPlTHSLne5CBAyW2UWPwdV0nXpUnN5QWXjjTVLpMJB6uNA==
+"@fullcalendar/daygrid@^5.11.3", "@fullcalendar/daygrid@~5.11.3":
+  version "5.11.3"
+  resolved "https://registry.npmjs.org/@fullcalendar/daygrid/-/daygrid-5.11.3.tgz"
+  integrity sha512-PCK0y80DRNCzWuC5lGpIWqCgKDvql1ah7rXql5lu+Gn2EeFj15ZQ8diMFjtNIQucEmFaNOXnR05Pgcry1n6Shg==
   dependencies:
-    "@fullcalendar/daygrid" "~6.1.1"
+    "@fullcalendar/common" "~5.11.3"
+    tslib "^2.1.0"
+
+"@fullcalendar/interaction@^5.11.3":
+  version "5.11.3"
+  resolved "https://registry.npmjs.org/@fullcalendar/interaction/-/interaction-5.11.3.tgz"
+  integrity sha512-L955wkDjza62K96ndstvYs2Fd4V0kayTDpqW8W7huFG3Ox8MutpLqKAa2SCaTvcNIlWS4oexGQRiQAaJG7u47A==
+  dependencies:
+    "@fullcalendar/common" "~5.11.3"
+    tslib "^2.1.0"
+
+"@fullcalendar/list@^5.11.3":
+  version "5.11.3"
+  resolved "https://registry.npmjs.org/@fullcalendar/list/-/list-5.11.3.tgz"
+  integrity sha512-6m9rJPzB5XfJZg+MlgVpha1cI3NUDeyV3GOmojJWZuti05NfDP4f0lzFUul8W7m1DQcjGS2UPRNE8HouA3guEA==
+  dependencies:
+    "@fullcalendar/common" "~5.11.3"
+    tslib "^2.1.0"
+
+"@fullcalendar/react@^5.11.2":
+  version "5.11.2"
+  resolved "https://registry.npmjs.org/@fullcalendar/react/-/react-5.11.2.tgz"
+  integrity sha512-OnLvfV406VEQcK4QGN8xR4ro6Manp9dKE7/n9dhs19J1kKpqS1w1sIEYg1dT11njbk0Ob+TdF3cXLDFq73jUlA==
+  dependencies:
+    "@fullcalendar/common" "~5.11.2"
+    tslib "^2.1.0"
+
+"@fullcalendar/timegrid@^5.11.3":
+  version "5.11.3"
+  resolved "https://registry.npmjs.org/@fullcalendar/timegrid/-/timegrid-5.11.3.tgz"
+  integrity sha512-SjIj2ZQ7nTyL1RxZkCPvNbuUQ0xHT+gfYJdUL3FT4bPjPJCxWtQ2CL8hxaeNmVozYYuy0yrGTW5Oup2+9IplbA==
+  dependencies:
+    "@fullcalendar/common" "~5.11.3"
+    "@fullcalendar/daygrid" "~5.11.3"
+    tslib "^2.1.0"
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
@@ -8203,7 +8236,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-"react-dom@^16.3.0 || 17", "react-dom@^16.8.0  || >=17.0.0 || >=18.0.0", "react-dom@^17.0.0 || ^18.0.0", "react-dom@^17.0.2 || ^18.0.0", react-dom@^18.0.0, react-dom@^18.2.0, react-dom@>=16.6.0, react-dom@>=16.8, react-dom@>=16.8.0:
+"react-dom@^16.3.0 || 17", "react-dom@^16.7.0 || ^17 || ^18", "react-dom@^16.8.0  || >=17.0.0 || >=18.0.0", "react-dom@^17.0.0 || ^18.0.0", "react-dom@^17.0.2 || ^18.0.0", react-dom@^18.0.0, react-dom@^18.2.0, react-dom@>=16.6.0, react-dom@>=16.8, react-dom@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -8353,7 +8386,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-"react@^16.3.0 || 17", "react@^16.8.0  || >=17.0.0 || >=18.0.0", "react@^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0", react@^18.0.0, react@^18.2.0, "react@>= 16", "react@>= 16.14.0 < 19.0.0", react@>=16.6.0, react@>=16.8, react@>=16.8.0:
+"react@^16.3.0 || 17", "react@^16.7.0 || ^17 || ^18", "react@^16.8.0  || >=17.0.0 || >=18.0.0", "react@^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0", react@^18.0.0, react@^18.2.0, "react@>= 16", "react@>= 16.14.0 < 19.0.0", react@>=16.6.0, react@>=16.8, react@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -9420,7 +9453,7 @@ tslib@^1.8.1:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.0, tslib@^2.0.3:
+tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0:
   version "2.5.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
   integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
