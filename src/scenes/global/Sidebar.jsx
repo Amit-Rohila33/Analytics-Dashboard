@@ -107,7 +107,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  _Amit_Rohila
+                  Amit Rohila
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   Dashboard Admin
